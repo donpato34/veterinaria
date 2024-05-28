@@ -4,8 +4,10 @@ header, nav, .main, footer{
     margin: 10px auto;
 }
 
-body {
-    background:linear-gradient(40deg,rgb(120,45,34), rgb(34, 45, 120));
+body{
+    background:linear-gradient(rgba(0, 0, 0,0.5), rgb(0, 0, 0,0.5)),
+    url(img/fondo.jpg) fixed no-repeat ;
+    background-size: cover;
     
 }
 

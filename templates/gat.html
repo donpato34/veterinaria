@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta name="keywords" content="HTML5, CSS3">
-    <title>especialidades</title>
-    <link rel="stylesheet" href="css.css">
-</head>
+{% extends "layout.html" %}
+
+{% block content %}
 <center>
     <h1 id="f">Gatos</h1>
 </center>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="cap.html">capybaras</a></li>
-            <li><a href="gat.html">gatos</a></li>
-            <li><a href="orn.html">ornitorincos</a></li>
-        </ul>
-    </nav>
+
+<nav>
+    <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/cap">capibaras</a></li>
+        <li><a href="/gat">gatos</a></li>
+        <li><a href="/orn">ornitorincos</a></li>
+        <li><a href="/contacto">contacto</a></li>
+    </ul>
+</nav>
 
     <section class="main2" >
     
@@ -30,11 +27,6 @@
                     algunos nombres más, es un mamífero carnívoro de la familia Felidae. <br>
                     Es una subespecie domesticada, por la convivencia con el ser humano, del gato montés.
                  </p>
-                 <img src="img/ga1.gif" width="300">      <img  src="img/ga2.gif" width="300">      
+                 <img src="/static/img/ga1.gif" width="300">      <img  src="/static/img/ga2.gif" width="300">      
                  </article>
-        </section>  
-        </section>
-
-
-</body>
-</html>
+                 {% endblock %}

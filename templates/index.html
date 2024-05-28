@@ -1,27 +1,26 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta name="keywords" content="HTML5, CSS3">
-<title>Veterinaria la tilina</title>
-<link rel="stylesheet" href="css.css">
-</head>
-<body>
+{% extends "layout.html" %}
+
+{% block content %}
+
     <center>
     <h1 id="f">Veterinaria la tilina</h1>
 </center>
 <header>
-   <img src="img/gf.gif" width="200px">
+   <img src="/static/img/gf.gif" width="200px">
 </header>
+
 
 <nav>
     <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="cap.html">capibaras</a></li>
-        <li><a href="gat.html">gatos</a></li>
-        <li><a href="orn.html">ornitorincos</a></li>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/cap">capibaras</a></li>
+        <li><a href="/gat">gatos</a></li>
+        <li><a href="/orn">ornitorincos</a></li>
+        <li><a href="/contacto">contacto</a></li>
+        <li><a href="/tabla">tabla</a></li>
     </ul>
 </nav>
-    
+
 <section class="main" >
     
 <section class="articles">
@@ -32,7 +31,7 @@
                 animales, pero nos especialisamos en gatos, capybaras y ornitorincos
                 contamos con especialistas capacitados para operar y atender de la mejor
                 manera, contamos con instalaciones con tegnologia de la mas alta calidad <br>
-                <img src="img/gf2.gif" width="200px">
+                <img src="/static/img/gf2.gif" width="200px">
            </p>
        </article>
 </section>  
@@ -47,11 +46,5 @@
     </p>
       
 </aside>
-    
-  
-<footer>
-    <p>tel:8000 900 100</p>
-</footer>
-  
-</body>
-</html>
+ 
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<nav>
+   <ul>
+       <li><a href="/">Inicio</a></li>
+       <li><a href="/cap">capibaras</a></li>
+       <li><a href="/gat">gatos</a></li>
+       <li><a href="/orn">ornitorincos</a></li>
+       <li><a href="/contacto">contacto</a></li>
+       <li><a href="/tabla">tabla</a></li>
+   </ul>
+</nav>
+
+<h1>
+    <CENTER> <b> ¡Contactanos! </b> </CENTER>
+      
+</h1>
+   <br>
+   <br>
+   <br>
+   <div class="container">
+    <table>
+      <Thead><TD><a href="/contacto">Agregar Comentario</a></TD></Thead>
+          <table border="2">
+            <Thead>
+            <th>id</th>
+                <th>correo</th>
+               <th>comentarios</th>
+            </Thead>
+            <tbody>
+                  {% for i in comentarios %}
+               <TR>
+                  <td width="42%">
+                        {{i.1}}
+                     </td>
+                     <td width="42%">
+                        {{i.2}}
+                     </td>
+                  
+                     <td>
+                        <center><a href="/editar/{{i.0}}" >Editar</a></center>
+                        </td>
+                        <td>
+                        <center><a href="/borrar/{{i.0}}" >Borrar</a></center>
+                        </td>
+                        {% endfor %}
+                     
+                     </TR>
+                  </tbody>
+          </table>
+        </table>
+    </div>
+         
+</form>
+{% endblock %}
