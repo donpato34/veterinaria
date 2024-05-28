@@ -1,0 +1,78 @@
+header, nav, .main, footer{
+    width: 95%;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+body {
+    background:linear-gradient(40deg,rgb(120,45,34), rgb(34, 45, 120));
+    
+}
+
+.nigas{
+    font-weight: bold;
+}
+
+nav{
+    background: linear-gradient(15deg, rgb(227, 42, 82),rgb(20, 158, 227),rgb(227, 218, 89));
+    overflow: auto;
+    margin: 10px auto;
+}
+
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    float: left;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+.main .articles{
+    width: 60%;
+    margin-right: 1.5%;
+    background: gray;
+    float:left;
+}
+.main .articles article{
+    padding: 10px;
+    background: gray;
+    margin-bottom: 10px;
+}
+
+aside{
+    width: 30%;
+    float: left;
+    background: orange;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+footer{
+    
+    clear:both;
+    background: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+#f{
+    color: white;
+}
+
+
+
+.main2 .articles{
+    width: 70%;
+    margin-right: 1.5%;
+    background: gray;
+    float:left;
+}
+.main2 .articles article{
+    padding: 10px;
+    background: gray;
+    margin-bottom: 10px;
+}
